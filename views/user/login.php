@@ -48,7 +48,7 @@
             }
         )
     </script>
-    <script src="assets/validacion.js"></script>
+    <script src="./../assets/js/validacion.js"></script>
 
 </body>
 
