@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="index2.html" id="formulario">
+    <form action="<?=base_url?>User/sigIn" method="POST" id="formulario">
         <section class="form_login">
             <h4>Bienvenido</h4>
             <input class="control" type="email" name="email" id="email" placeholder="Ingrese su Correo">

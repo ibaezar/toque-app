@@ -11,6 +11,7 @@ CREATE TABLE usuarios(
     apellido    VARCHAR(255) NOT NULL,
     email       VARCHAR(255) NOT NULL,
     password    VARCHAR(255) NOT NULL,
+    rol         VARCHAR(100),
     fecha       DATE NOT NULL,
     CONSTRAINT pk_usuarios PRIMARY KEY(id),
     CONSTRAINT uq_email UNIQUE(email)

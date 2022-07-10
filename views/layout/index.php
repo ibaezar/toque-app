@@ -44,6 +44,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <?php if(isset($_SESSION['login'])): ?>
+            <span class="navbar-brand text-warning"> | Bienvenido <?=$_SESSION['login']->nombre?></span>
+          <?php endif; ?>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="<?=base_url?>">
@@ -59,6 +62,11 @@
             <li class="nav-item">
               <a class="nav-link" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
             </li>
+            <?php if(isset($_SESSION['admin'])):?>
+              <li class="nav-item">
+              <a class="nav-link" href="<?=base_url?>User/logout">Cerrar Sesión</a>
+            </li>
+            <?php endif; ?>
           </ul>
         </div>
       </div>

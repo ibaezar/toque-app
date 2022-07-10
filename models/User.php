@@ -8,6 +8,7 @@ class User{
     private $lastName;
     private $email;
     private $password;
+    private $rol;
     private $date;
     private $database;
 
@@ -56,6 +57,14 @@ class User{
         $this->password = $password;
     }
 
+    function getRol() {
+        return $this->rol;
+    }
+
+    function setRol($rol): void {
+        $this->rol = $rol;
+    }
+
     function getDate(){
         return $this->date;
     }
@@ -74,6 +83,7 @@ class User{
         ."'{$this->getLastName()}'," 
         ."'{$this->getEmail()}'," 
         ."'{$password_cifrada}'," 
+        ."'user'," 
         ."CURDATE()"
         .");";
         
@@ -85,5 +95,23 @@ class User{
         }
         return $result;
 
+    }
+
+    function loginDB($email, $password){
+        $result = false;
+        //Comprobar si existe el usuario en la bd
+        $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+        $login = $this->database->query($sql);
+    
+        if($login && $login->num_rows == 1){
+            $usuario = $login->fetch_object();
+            //Verificar la contraseña
+            $verify = password_verify($password, $usuario->password);
+    
+            if($verify){
+                $result = $usuario;
+            }
+        }
+        return $result;
     }
 }
