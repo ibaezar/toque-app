@@ -12,8 +12,16 @@
 
 <body>
 
+            <?php if(isset($_SESSION['registro']) && $_SESSION['registro'] == 'correcto'):?>
+                <script>alert('Usuario registrado exitosamente.')</script>;
+                <script>window.location="<?=base_url?>"</script>
+            <?php elseif(isset($_SESSION['registro']) && $_SESSION['registro'] == 'incorrecto'):?>
+                <script>alert('Error al registrar el usuario, intentelo nuevamente.')</script>;
+            <?php endif;?>
+            <?php Utils::eliminarSesion('registro') ?>
+
     <div class="form_register">
-        <form action="index2.html" id="formulario">
+        <form action="<?=base_url?>User/saveUser" method="POST" id="formulario">
             <h4>Formulario de Registro</h4>
             <div>
                 <label for="nombre"></label>
@@ -25,7 +33,7 @@
                 <label for="password1"></label>
                 <input class="control" type="password" name="password1" id="password1" placeholder="Ingrese su Contraseña">
                 <label for="password2"></label>
-                <input class="control" type="password" name="password2" id="password2" placeholder="Ingrese su Contraseña">
+                <input class="control" type="password" name="password2" id="password2" placeholder="Repita su Contraseña">
                 <p>Estoy de acuerdo con <a href="#"> Terminos y Condiciones </a> </p>
                 <button type="submit" class="btn btn-success">Enviar</button>
                 <p><a href="<?=base_url?>User/forget">¿Olvidó su cuenta? Ingrese Aquí</a></p>
