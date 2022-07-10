@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/fondo-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form_forgot {
+  width: 400px;
+  background: #851111d6;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  font-family: "Calibri";
+  color: white;
+  font-size: 27px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form_forgot h4 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form_forgot p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form_forgot a {
+  color: white;
+  text-decoration: none;
+}
+
+.form_forgot a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  background: #cd2020;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.control {
+  width: 100%;
+  background: #571414;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #d98888;
+  font-size: 20px;
+  color: white;
+}
+
+span {
+  display: flex;
+  color: #c31d47;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
