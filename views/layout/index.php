@@ -41,7 +41,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
       <div class="container">
-        <a class="navbar-brand text-light fToque fs-3" href="#">Toque</a>
+        <a class="navbar-brand text-light fToque fs-3" href="<?=base_url?>">Toque</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -63,6 +63,7 @@
                 Inicio
               </a>
             </li>
+            <?php if(!isset($_SESSION['login'])): ?>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/login"> Ingresar </a>
             </li>
@@ -72,6 +73,14 @@
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
             </li>
+            <?php elseif(isset($_SESSION['login'])): ?>
+              <li class="nav-item">
+              <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fMenu" href="<?=base_url?>User/misDatos">Mis datos</a>
+            </li>
+            <?php endif; ?>
             <?php if(isset($_SESSION['admin'])):?>
               <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
