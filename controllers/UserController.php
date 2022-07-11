@@ -12,6 +12,19 @@ class UserController{
         require_once 'views/layout/index.php';
     }
 
+
+    public function indexUser(){
+        require_once 'views/layout/indexUser.php';
+    }
+
+    public function misDatos(){
+        require_once 'views/user/misDatos.php';
+    }
+
+    public function misToques(){
+        require_once 'views/user/misToques.php';
+    }
+
     public function login(){
         require_once 'views/user/login.php';
     }
@@ -64,7 +77,7 @@ class UserController{
                 }
                 //header("Location:".base_url);
                 echo "<script>alert('Usuario correcto')</script>";
-                echo '<script>window.location="'.base_url.'"</script>';
+                echo '<script>window.location="'.base_url.'User/indexUser"</script>';
             }else{
                 //header("Location:".base_url."Usuario/access");
                 echo "<script>alert('Usuario incorrecto')</script>";
