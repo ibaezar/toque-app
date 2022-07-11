@@ -17,8 +17,11 @@ class UserController{
         require_once 'views/layout/indexUser.php';
     }
 
-    public function misDatos(){
-        require_once 'views/user/misDatos.php';
+    public function miCuenta(){
+        require_once 'views/user/miCuenta.php';
+    }
+    public function miCuentaForm(){
+        require_once 'views/user/miCuentaForm.php';
     }
 
     public function misToques(){
