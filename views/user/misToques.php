@@ -58,16 +58,16 @@
             <span class="navbar-brand text-warning fMenu"> | Bienvenido <?=$_SESSION['login']->nombre?></span>
           <?php endif; ?>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="<?=base_url?>">
+          <li class="nav-item">
+              <a class="nav-link fMenu" aria-current="page" href="<?=base_url?>User/indexUser">
                 Inicio
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/login"> Mis Toques </a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/register">Mis datos</a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
@@ -80,6 +80,43 @@
       </div>
     </nav>
 
+
+    <div class="container-flex">
+<div class="row grid">
+<!-- carrusel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide col-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       <!-- falabella -->
+    <div class="carousel-item active">
+      <img src="./../assets/css/img/publi.jpg" class="d-block w-100"  height="490px" alt="...">
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.pg.jpg" class="d-block w-100" alt="..."  height="490px" >
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/publi2.jpg" class="d-block w-100" alt="..."  height="490px">
+    </div>
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.jpg" class="d-block w-100" alt="..."height="490px">
+    </div>
+  </div>
+</div>
+
+<div class="col-9">
+<form action="" class=" mt-5 bg-dev justify-content-center text-center" >
+<section  class="mt-5 container">
+        <h2 class="mt-4 fToque colorRed mb-4 fs-2">Mis Toques</h2>
+        <h3 class="mt-4 fToque colorRed mb-4 fs-3">Historial</h3>
+      
+    </section>
+    </form>
+    
+    </div>
+
+</div>
+</div>
 
     
    

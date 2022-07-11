@@ -59,7 +59,7 @@
           <?php endif; ?>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="<?=base_url?>">
+              <a class="nav-link" aria-current="page" href="<?=base_url?>User/indexUser">
                 Inicio
               </a>
             </li>
@@ -156,7 +156,7 @@
 
 
   </section>
-  <button type="button" class="btn btn-outline-danger mt-4">Enviar</button>
+  <a type="button" class="btn btn-outline-danger mt-4" href="<?=base_url?>User/ingresoCorrecto">Enviar</a>
 </form>
 </div>
 

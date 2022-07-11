@@ -28,6 +28,10 @@ class UserController{
         require_once 'views/user/misToques.php';
     }
 
+    public function ingresoCorrecto(){
+        require_once 'views/user/ingresoCorrecto.php';
+    }
+
     public function login(){
         require_once 'views/user/login.php';
     }

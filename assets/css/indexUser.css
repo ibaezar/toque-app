@@ -22,7 +22,15 @@
     margin-top: 20px;
     margin-left: 60px;
     margin-right: 60px;
+    box-shadow: 3px 3px 10px rgb(170, 115, 115);
+    
 
+  }
+
+  .sh-img {
+
+    box-shadow: 5px 5px 10px rgb(238, 232, 232);
+    
   }
 
   .textform {
