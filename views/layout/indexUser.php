@@ -67,7 +67,7 @@
               <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/misDatos">Mis datos</a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>

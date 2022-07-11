@@ -75,6 +75,55 @@
         </div>
       </div>
     </nav>
-   
+
+
+
+
+<div class="container-flex">
+<div class="row grid">
+<!-- carrusel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide col-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       <!-- falabella -->
+    <div class="carousel-item active">
+      <img src="./../assets/css/img/publi.jpg" class="d-block w-100"  height="1100px" alt="...">
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.pg.jpg" class="d-block w-100" alt="..."  height="1100px" >
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/publi2.jpg" class="d-block w-100" alt="..."  height="1100px">
+    </div>
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.jpg" class="d-block w-100" alt="..."height="1100">
+    </div>
+  </div>
+</div>
+
+
+<div class="col-9">
+<section class="bg-dev justify-content-center text-center">
+    <form action="" class="class="mt-5 container"">
+        <h4 class="mt-4 fToque colorRed mb-4 fs-2">Mis Datos</h4>
+        <label class="fMenu textform fs-5">Nombre:</label>
+        <input class="control w-50 mb-3" type="text" name="nombres" id=" nombres" placeholder="Juan">
+        <br>
+        <label class="fMenu textform fs-5">Apellido:</label>
+        <input class="control w-50 mb-3" type="text" name="apellidos" id=" apellidos" placeholder="Perez">
+        <br>
+        <label class="fMenu textform fs-5">Correo</label>
+        <input class="control w-50 mb-3" type="email" name="email" id=" email" placeholder="xxxx@xxx.xxx">
+        <br>
+        </form>
+        <button type="button" class="btn btn-outline-danger mt-4">Cambiar</button>
+    </section>
+    
+    </div>
+
+</div>
+</div>
+
   </body>
 </html>

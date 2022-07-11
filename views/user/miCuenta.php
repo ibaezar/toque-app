@@ -41,7 +41,7 @@
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
       <div class="container">
-        <a class="navbar-brand text-light fToque fs-3" href="<?=base_url?>">Toque</a>
+        <a class="navbar-brand text-light fToque fs-3" href="#">Toque</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,11 +58,7 @@
             <span class="navbar-brand text-warning fMenu"> | Bienvenido <?=$_SESSION['login']->nombre?></span>
           <?php endif; ?>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="<?=base_url?>">
-                Inicio
-              </a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/login"> Mis Toques </a>
             </li>
@@ -81,7 +77,52 @@
     </nav>
 
 
+
+
+<div class="container-flex">
+<div class="row grid">
+<!-- carrusel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide col-3" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       <!-- falabella -->
+    <div class="carousel-item active">
+      <img src="./../assets/css/img/publi.jpg" class="d-block w-100"  height="1100px" alt="...">
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.pg.jpg" class="d-block w-100" alt="..."  height="1100px" >
+    </div>
+       <!-- falabella -->
+    <div class="carousel-item">
+      <img src="./../assets/css/img/publi2.jpg" class="d-block w-100" alt="..."  height="1100px">
+    </div>
+    <div class="carousel-item">
+      <img src="./../assets/css/img/public3.jpg" class="d-block w-100" alt="..."height="1100">
+    </div>
+  </div>
+</div>
+
+
+<div class="col-9">
+<section class="bg-dev justify-content-center text-center">
+    <form action="" class="class="mt-5 container"">
+        <h4 class="mt-4 fToque colorRed mb-4 fs-2">Mis Datos</h4>
+        <label class="fMenu textform fs-5">Nombre:</label>
+        
+        <br>
+        <label class="fMenu textform fs-5">Apellido:</label>
+       
+        <br>
+        <label class="fMenu textform fs-5">Correo</label>
+        <br>
+        </form>
+        <button type="button" class="btn btn-outline-danger mt-4">Cambiar mis datos</button>
+    </section>
     
-   
+    </div>
+
+</div>
+</div>
+
   </body>
 </html>
