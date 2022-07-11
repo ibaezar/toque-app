@@ -60,13 +60,13 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
             
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/login"> Mis Toques </a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/register">Mis datos</a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
+              <a class="nav-link fMenu" href="<?=base_url?>User/forget">Cambiar mi Contraseña</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
@@ -86,42 +86,33 @@
     <div class="carousel-inner">
        <!-- falabella -->
     <div class="carousel-item active">
-      <img src="./../assets/css/img/publi.jpg" class="d-block w-100"  height="1100px" alt="...">
+      <img src="./../assets/css/img/publi.jpg" class="d-block w-100"  height="490px" alt="...">
     </div>
        <!-- falabella -->
     <div class="carousel-item">
-      <img src="./../assets/css/img/public3.pg.jpg" class="d-block w-100" alt="..."  height="1100px" >
+      <img src="./../assets/css/img/public3.pg.jpg" class="d-block w-100" alt="..."  height="490px" >
     </div>
        <!-- falabella -->
     <div class="carousel-item">
-      <img src="./../assets/css/img/publi2.jpg" class="d-block w-100" alt="..."  height="1100px">
+      <img src="./../assets/css/img/publi2.jpg" class="d-block w-100" alt="..."  height="490px">
     </div>
     <div class="carousel-item">
-      <img src="./../assets/css/img/public3.jpg" class="d-block w-100" alt="..."height="1100">
+      <img src="./../assets/css/img/public3.jpg" class="d-block w-100" alt="..."height="490px">
     </div>
   </div>
 </div>
 
 
 <div class="col-9">
-<section class="bg-dev justify-content-center text-center">
-    <form action="" class="class="mt-5 container"">
-        <h4 class="mt-4 fToque colorRed mb-4 fs-2">Mis Datos</h4>
-        <label class="fMenu textform fs-5">Nombre:</label>
-        <input class="control w-50 mb-3" type="text" name="nombres" id=" nombres" placeholder="Juan">
-        <br>
-        <label class="fMenu textform fs-5">Apellido:</label>
-        <input class="control w-50 mb-3" type="text" name="apellidos" id=" apellidos" placeholder="Perez">
-        <br>
-        <label class="fMenu textform fs-5">Correo</label>
-        <input class="control w-50 mb-3" type="email" name="email" id=" email" placeholder="xxxx@xxx.xxx">
-        <br>
-        </form>
-        <button type="button" class="btn btn-outline-danger mt-4">Cambiar</button>
-    </section>
-    
-    </div>
 
+<section class=" mt-4 bg-dev justify-content-center text-center" >
+<div class="mt-5 container">
+    <h2 class="fToque mb-4 colorRed fs-1">Ingreso Correcto!</h2>
+       <img src="./../assets/css/img/toque.png" alt="" height="220px" width="220px" class="rounded sh-img">
+       <p class="fMenu mt-3 fs-4 colorRed">A un Toque de tí =)</p>
+          </div>
+    </section>
+ </div>
 </div>
 </div>
 
