@@ -16,7 +16,7 @@
             <h4>Bienvenido</h4>
             <input class="control" type="email" name="email" id="email" placeholder="Ingrese su Correo">
             <input class="control" type="password" name="password1" id="password1" placeholder="Ingrese su Contraseña">
-            <button type="submit" class="btn btn-success" href="cuenta.html" >Ingresar</button>
+            <button type="submit" class="btn btn-success">Ingresar</button>
             <p><a type="submit" href="<?=base_url?>User/register"> ¡Registrate! Ingrese Aquí</A></a></p>
             <p><a type="submit" href="<?=base_url?>User/forget">¿Olvidó su contraseña? Ingrese Aquí </a></p>
         </section>

@@ -1,0 +1,35 @@
+.fMenu {
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .fToque {
+    font-family: 'Zilla Slab', serif;
+  }
+
+.colorRed {
+
+    color: rgba(81, 14, 14, 0.636);
+  }
+  
+
+
+.bg-dev {
+
+    background-color: rgba(196, 88, 88, 0.386);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+
+  .textform {
+
+    margin-bottom: 3px;
+  }
+
+  .wFom {
+
+  }
