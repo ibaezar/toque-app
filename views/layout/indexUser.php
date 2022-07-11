@@ -41,7 +41,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
       <div class="container">
-        <a class="navbar-brand text-light fToque fs-3" href="#">Toque</a>
+        <a class="navbar-brand text-light fToque fs-3" href="<?=base_url?>">Toque</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,7 +58,11 @@
             <span class="navbar-brand text-warning fMenu"> | Bienvenido <?=$_SESSION['login']->nombre?></span>
           <?php endif; ?>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
-            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="<?=base_url?>">
+                Inicio
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
