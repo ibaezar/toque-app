@@ -60,17 +60,14 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
           <li class="nav-item">
               <a class="nav-link fMenu" aria-current="page" href="<?=base_url?>User/indexUser">
-                Inicio
+                Dar toque
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
+              <a class="nav-link active fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
@@ -109,7 +106,34 @@
 <section  class="mt-5 container">
         <h2 class="mt-4 fToque colorRed mb-4 fs-2">Mis Toques</h2>
         <h3 class="mt-4 fToque colorRed mb-4 fs-3">Historial</h3>
-      
+        <hr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Comercio</th>
+              <th scope="col">Producto</th>
+              <th scope="col">Boleta/Factura</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Tipo Solicitud</th>
+              <th scope="col">Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php $toques = Utils::showToques($_SESSION['login']->id) ?>
+            <?php while($toque = $toques->fetch_object()): ?>
+            <tr>
+              <td><?= $toque->id ?></td>
+              <td><?= $toque->comercio ?></td>
+              <td><?= $toque->producto ?></td>
+              <td><?= $toque->boleta_factura ?></td>
+              <td><?= $toque->estado ?></td>
+              <td><?= $toque->tipo ?></td>
+              <td><?= $toque->fecha ?></td>
+            </tr>
+            <?php endwhile; ?>
+          </tbody>
+        </table>
     </section>
     </form>
     

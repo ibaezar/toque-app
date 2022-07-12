@@ -180,7 +180,7 @@ class Toque{
         $resul = false;
         $show = $this->database->query("SELECT * FROM toques WHERE usuario_id = {$this->getUsuario_id()}");
         if($show){
-            $resul = $show->fetch_object();
+            $resul = $show;
         }
         return $resul;
     }

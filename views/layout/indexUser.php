@@ -47,8 +47,8 @@
         <?php endif; ?>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="<?=base_url?>User/indexUser">
-              Inicio
+            <a class="nav-link active fMenu" aria-current="page" href="<?=base_url?>User/indexUser">
+            Dar toque
             </a>
           </li>
           <li class="nav-item">
@@ -58,9 +58,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fMenu" href="<?=base_url?>User/forget">Olvide mi Contraseña</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
@@ -100,7 +97,8 @@
       <div class="col-9">
         <form action="<?=base_url?>Toque/save" method="POST" class="bg-dev justify-content-center text-center">
           <section class="mt-5 container">
-            <h2 class="mt-4 fToque colorRed mb-4">Ingresar Solicitud</h2>
+            <h2 class="fToque fw-bold colorRed ">Dar Toque</h2>
+            <h3 class="fToque colorRed mb-4 fs-3">Ingresa tu Solicitud</h3>
 
             <p class="fMenu textform fs-5">Producto</p>
             <input type="text" id="producto" name="producto" class="w-50 mb-3" placeholder="Bicicleta" />

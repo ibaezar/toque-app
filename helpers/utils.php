@@ -27,4 +27,13 @@ class Utils{
         $result = $comunas->getByRegion();
         return $result;
     }
+
+    //Mostrar toques
+    public static function showToques($usuario_id){
+        require_once 'models/Toque.php';
+        $toques = new Toque();
+        $toques->setUsuario_id($usuario_id);
+        $result = $toques->getByUsuario();
+        return $result;
+    }
 }

@@ -60,17 +60,14 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
           <li class="nav-item fMenu">
               <a class="nav-link" aria-current="page" href="<?=base_url?>User/indexUser">
-                Inicio
+              Dar toque
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/forget">Cambiar mi Contraseña</a>
+              <a class="nav-link active fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
@@ -111,13 +108,13 @@
 <form action="" class=" mt-5 bg-dev justify-content-center text-center" >
 <section  class="mt-5 container">
         <h4 class="mt-4 fToque colorRed mb-4 fs-2">Mis Datos</h4>
-        <label class="fMenu textform fs-5">Nombre:</label>
+        <label class="fMenu textform fs-5">Nombre: <?= $_SESSION['login']->nombre ?></label>
         
         <br>
-        <label class="fMenu textform fs-5">Apellido:</label>
+        <label class="fMenu textform fs-5">Apellido: <?= $_SESSION['login']->apellido ?></label>
        
         <br>
-        <label class="fMenu textform fs-5">Correo</label>
+        <label class="fMenu textform fs-5">Correo: <?= $_SESSION['login']->email ?></label>
         <br>
         <a type="submit"  href="<?=base_url?>User/miCuentaForm" class="btn btn-outline-danger mt-4" >Cambiar mis datos</a>
     </section>

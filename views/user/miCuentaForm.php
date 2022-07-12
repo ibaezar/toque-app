@@ -60,17 +60,14 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fontMenu">
           <li class="nav-item fMenu">
               <a class="nav-link" aria-current="page" href="<?=base_url?>User/indexUser">
-                Inicio
+              Dar toque
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/misToques"> Mis Toques </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fMenu" href="<?=base_url?>User/forget">Cambiar mi Contraseña</a>
+              <a class="nav-link active fMenu" href="<?=base_url?>User/miCuenta">Mi Cuenta</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fMenu" href="<?=base_url?>User/logout">Cerrar Sesión</a>
