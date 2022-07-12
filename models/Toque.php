@@ -152,7 +152,7 @@ class Toque{
 
     public function setNum_calle($num_calle)
     {
-        $this->num_calle = $this->database->real_escape_string((int)$num_calle);
+        $this->num_calle = (int)$num_calle;
     }
 
     public function getDepto_block()
@@ -162,7 +162,7 @@ class Toque{
 
     public function setDepto_block($depto_block)
     {
-        $this->depto_block = $this->database->real_escape_string((int)$depto_block);
+        $this->depto_block = $this->database->real_escape_string($depto_block);
     }
 
     //Obtener listado de todos los toques
@@ -190,19 +190,19 @@ class Toque{
         $result = false;
         $sql = "INSERT INTO toques VALUES("
         ."null," 
-        ."'{$this->getUsuario_id()}'," 
-        ."'{$this->getComercio_id()}'," 
-        ."'{$this->getBoleta_factura()}'," 
-        ."'{$this->getproducto()}'," 
+        ."{$this->getUsuario_id()}," 
+        ."'{$this->getComercio()}'," 
+        ."{$this->getBoleta_factura()}," 
+        ."'{$this->getProducto()}'," 
         ."'{$this->getTipo()}'," 
-        ."CURDATE()" 
-        ."'{$this->getEstado()}'," 
+        ."CURDATE()," 
+        ."'Ingresado'," 
         ."'{$this->getComentario()}'," 
-        ."'{$this->getRegion_id()}'," 
-        ."'{$this->getComuna_id()}'," 
+        ."{$this->getRegion_id()}," 
+        ."{$this->getComuna_id()}," 
         ."'{$this->getCalle()}'," 
-        ."'{$this->getNum_calle()}'," 
-        ."'{$this->getDepto_block()}'," 
+        ."{$this->getNum_calle()}," 
+        ."'{$this->getDepto_block()}'" 
         .");";
         
         $save = $this->database->query($sql);

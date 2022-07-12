@@ -57,7 +57,7 @@ class Comuna{
         $resul = false;
         $show = $this->database->query("SELECT * FROM comunas WHERE region_id = {$this->getRegion_id()}");
         if($show){
-            $resul = $show->fetch_object();
+            $resul = $show;
         }
         return $resul;
     }

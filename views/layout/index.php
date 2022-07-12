@@ -171,19 +171,9 @@
 
    
 
-      <h1 class="text-center ded">Nosotros</h1>
+      <h1 class="text-center ded">Sobre Nosotros</h1>
       <p class="mt-3 mb-5 ded">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum
-        obcaecati veritatis nulla alias distinctio excepturi veniam magnam
-        aperiam mollitia ullam quos sit ad nostrum repellendus esse, recusandae
-        aliquid necessitatibus? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Praesentium incidunt, magni a culpa ex laudantium
-        alias facere harum porro, natus perspiciatis eveniet dicta placeat
-        reprehenderit asperiores tenetur iure maiores. Error. Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Temporibus accusamus cupiditate
-        tenetur. Architecto sed doloremque sunt autem enim, adipisci iusto
-        perferendis recusandae nulla nisi reiciendis voluptates distinctio
-        necessitatibus! Labore, ad?
+      Toque es una aplicación nacional que contempla un sistema de cambio y devolución de productos adquiridos por usuarios en diferentes tipos de comercios. Nace tras la alta demanda en las compras digitales, garantizando seguridad y confianza en el consumidor. El proceso es innovador y dinámico utilizando una extensión web dinámica y responsiva que permita una gran usabilidad, los trabajadores de Toque están comprometidos a realizar una operación rápida y efectiva, utilizando altos estándares de detección y empaquetado. Además, cuenta con una mesa de ayuda para trabajadores, usuarios y comercios asociados, permitiendo una comunicación fluida dentro de la comunidad
       </p>
 
       <p class="mb-5"></p>
