@@ -107,5 +107,27 @@ class UserController{
         //header("Location:".base_url);
         echo '<script>window.location="'.base_url.'"</script>';
     }
+
+    public function editar(){
+        if(isset($_POST['usuario_id'])){
+            $usuario = new User();
+            $usuario->setId($_POST['usuario_id']);
+            $usuario->setName($_POST['nombre']);
+            $usuario->setLastName($_POST['apellido']);
+
+            $edit = $usuario->edit();
+
+            if($edit){
+                echo "<script>alert('Usuario actualizado')</script>";
+                echo '<script>window.location="'.base_url.'User/miCuentaForm"</script>';
+                $_SESSION['login'] = $usuario->getOne()->fetch_object();
+            }else{
+                echo "<script>alert('Error al actualizar usuario')</script>";
+                echo '<script>window.location="'.base_url.'User/miCuentaForm"</script>';
+            }
+        }else{
+            echo '<script>window.location="'.base_url.'User/miCuentaForm"</script>';
+        }
+    }
     
 }

@@ -26,7 +26,6 @@ class ToqueController{
             $crear = $toque->save();
 
             if($crear){
-                var_dump($crear);
                 echo '<script>window.location="'.base_url.'User/ingresoCorrecto"</script>';
             }else{
                 echo "<script>alert('Error al crear el toque')</script>";
@@ -36,6 +35,27 @@ class ToqueController{
         }else{
             echo "<script>alert('Error al crear el toque desde el post')</script>";
             echo '<script>window.location="'.base_url.'User/indexUser"</script>';
+        }
+    }
+
+    public function eliminar(){
+
+        if(isset($_GET['id'])){
+            
+            $toque_id = $_GET['id'];
+            $toque = new Toque();
+            $toque->setId($toque_id);
+
+            $eliminar = $toque->eliminar();
+            if($eliminar){
+                echo "<script>alert('Solicitud Cancelada')</script>";
+                echo '<script>window.location="'.base_url.'User/misToques"</script>';
+            }else{
+                echo "<script>alert('Error al cancelar la solicitud')</script>";
+                echo '<script>window.location="'.base_url.'User/misToques"</script>';
+            }
+        }else{
+            echo '<script>window.location="'.base_url.'User/misToques"</script>';
         }
     }
 }

@@ -110,26 +110,26 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Id</th>
               <th scope="col">Comercio</th>
               <th scope="col">Producto</th>
               <th scope="col">Boleta/Factura</th>
               <th scope="col">Estado</th>
               <th scope="col">Tipo Solicitud</th>
               <th scope="col">Fecha</th>
+              <th scope="col">Acciones</th>
             </tr>
           </thead>
           <tbody>
             <?php $toques = Utils::showToques($_SESSION['login']->id) ?>
             <?php while($toque = $toques->fetch_object()): ?>
             <tr>
-              <td><?= $toque->id ?></td>
               <td><?= $toque->comercio ?></td>
               <td><?= $toque->producto ?></td>
               <td><?= $toque->boleta_factura ?></td>
               <td><?= $toque->estado ?></td>
               <td><?= $toque->tipo ?></td>
               <td><?= $toque->fecha ?></td>
+              <td><a href="<?=base_url?>Toque/eliminar&id=<?=$toque->id?>" class="btn btn-danger">Cancelar</a></td>
             </tr>
             <?php endwhile; ?>
           </tbody>

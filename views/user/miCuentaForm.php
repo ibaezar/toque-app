@@ -106,19 +106,17 @@
 
 <div class="col-9">
 <section class="mt-5 bg-dev justify-content-center text-center">
-    <form action="" class="class="mt-5 container"">
+    <form action="<?=base_url?>User/editar" method="POST" class="mt-5 container">
         <h4 class="mt-4 fToque colorRed mb-4 fs-2">Mis Datos</h4>
         <label class="fMenu textform fs-5">Nombre:</label>
-        <input class="control w-50 mb-3" type="text" name="nombres" id=" nombres" placeholder="Juan">
+        <input class="control w-50 mb-3" type="text" name="nombre" value="<?=$_SESSION['login']->nombre?>" id=" nombres" placeholder="Juan">
         <br>
         <label class="fMenu textform fs-5">Apellido:</label>
-        <input class="control w-50 mb-3" type="text" name="apellidos" id=" apellidos" placeholder="Perez">
+        <input class="control w-50 mb-3" type="text" name="apellido" value="<?=$_SESSION['login']->apellido?>" id=" apellidos" placeholder="Perez">
         <br>
-        <label class="fMenu textform fs-5">Correo</label>
-        <input class="control w-50 mb-3" type="email" name="email" id=" email" placeholder="xxxx@xxx.xxx">
-        <br>
+        <input type="hidden" name="usuario_id" value="<?=$_SESSION['login']->id?>">
+        <button type="submit" class="btn btn-outline-danger mt-4">Cambiar</button>
         </form>
-        <button type="button" class="btn btn-outline-danger mt-4">Cambiar</button>
     </section>
     
     </div>

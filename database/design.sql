@@ -31,6 +31,12 @@ CREATE TABLE comunas(
     CONSTRAINT fk_comunas_regiones FOREIGN KEY(region_id) REFERENCES regiones(id)
 )ENGINE=InnoDb;
 
+CREATE TABLE comercio(
+    id          INT(255) AUTO_INCREMENT NOT NULL,
+    nombre      VARCHAR(255) NOT NULL,
+    CONSTRAINT pk_comercio PRIMARY KEY(id)
+)ENGINE=InnoDb;
+
 CREATE TABLE toques(
     id              INT(255) AUTO_INCREMENT NOT NULL,
     usuario_id      INT(255) NOT NULL,
@@ -48,6 +54,7 @@ CREATE TABLE toques(
     depto_block     VARCHAR(255) NOT NULL,
     CONSTRAINT pk_toques PRIMARY KEY(id),
     CONSTRAINT fk_toques_usuarios FOREIGN KEY(usuario_id) REFERENCES usuarios(id),
+    CONSTRAINT fk_toques_comercio FOREIGN KEY(comercio_id) REFERENCES comercio(id)
     CONSTRAINT fk_toques_regiones FOREIGN KEY(region_id) REFERENCES regiones(id),
     CONSTRAINT fk_toques_comunas FOREIGN KEY(comuna_id) REFERENCES comunas(id)
 )ENGINE=InnoDb;

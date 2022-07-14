@@ -73,6 +73,16 @@ class User{
         $this->date = $date;
     }
 
+    public function getOne(){
+        $result = false;
+        $sql = "SELECT * FROM usuarios WHERE id = {$this->getId()}";
+        $get = $this->database->query($sql);
+        if($get){
+            $result = $get;
+        }
+        return $result;
+    }
+
     //Registrar usuarios
     public function save(){
         //cifrar contraseña
@@ -111,6 +121,16 @@ class User{
             if($verify){
                 $result = $usuario;
             }
+        }
+        return $result;
+    }
+
+    public function edit(){
+        $result = false;
+        $sql = "UPDATE usuarios SET nombre = '{$this->getName()}', apellido = '{$this->getLastName()}' WHERE id = {$this->getId()}";
+        $update = $this->database->query($sql);
+        if($update){
+            $result = $update;
         }
         return $result;
     }
