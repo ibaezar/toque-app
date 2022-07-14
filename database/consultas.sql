@@ -107,3 +107,24 @@ insert into comunas VALUES(null, 1, 'Valle nevado');
 insert into comunas VALUES(null, 1, 'Viluco');
 insert into comunas VALUES(null, 1, 'Vitacura');
 insert into comunas VALUES(null, 1, 'Ñuñoa');
+
+/*Poblar comercios*/
+insert into comercio VALUES(null, 'Falabella');
+insert into comercio VALUES(null, 'Paris');
+insert into comercio VALUES(null, 'Dijon');
+insert into comercio VALUES(null, 'Lapolar');
+insert into comercio VALUES(null, 'Tottus');
+insert into comercio VALUES(null, 'Lider');
+insert into comercio VALUES(null, 'Santa Isabel');
+insert into comercio VALUES(null, 'Apple Store');
+insert into comercio VALUES(null, 'Doite');
+insert into comercio VALUES(null, 'Lippi');
+insert into comercio VALUES(null, 'The North Face');
+insert into comercio VALUES(null, 'Jumbo');
+insert into comercio VALUES(null, 'Easy');
+insert into comercio VALUES(null, 'Homecenter Sodimac');
+insert into comercio VALUES(null, 'Construmart');
+insert into comercio VALUES(null, 'Adidas');
+insert into comercio VALUES(null, 'Nike');
+insert into comercio VALUES(null, 'Under Armour');
+insert into comercio VALUES(null, 'Fashions Park');
