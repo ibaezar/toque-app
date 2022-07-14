@@ -123,7 +123,7 @@
             <?php $toques = Utils::showToques($_SESSION['login']->id) ?>
             <?php while($toque = $toques->fetch_object()): ?>
             <tr>
-              <td><?= $toque->comercio ?></td>
+              <td><?= Utils::showComercioById($toque->comercio_id)->nombre ?></td>
               <td><?= $toque->producto ?></td>
               <td><?= $toque->boleta_factura ?></td>
               <td><?= $toque->estado ?></td>
@@ -136,7 +136,6 @@
         </table>
     </section>
     </form>
-    
     </div>
 
 </div>

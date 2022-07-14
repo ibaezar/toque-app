@@ -103,8 +103,14 @@
             <p class="fMenu textform fs-5">Producto</p>
             <input type="text" id="producto" name="producto" class="w-50 mb-3" placeholder="Bicicleta" />
 
-            <p class="fMenu textform fs-5">Comercio</p>
-            <input type="text" id="comercio" name="comercio" class="w-50 mb-3" placeholder="Falabella" />
+            <p class="fMenu textform fs-6 mt-3">Comercio</p>
+            <select name="comercio_id" class="w-50 mb-3">
+              <option value="" hidden="">Comercios</option>
+              <?php $comercios = Utils::showComercio() ?>
+              <?php while($comercio = $comercios->fetch_object()): ?>
+                <option value="<?=$comercio->id?>"><?=$comercio->nombre?></option>
+              <?php endwhile; ?>
+            </select>
 
             <p class="fMenu textform fs-5">N°Boleta/Factura</p>
             <input type="number" id="boleta_factura" name="boleta_factura" class="w-50 mb-3" placeholder="765418819" />

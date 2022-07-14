@@ -36,4 +36,21 @@ class Utils{
         $result = $toques->getByUsuario();
         return $result;
     }
+
+    //Mostrar comercios
+    public static function showComercio(){
+        require_once 'models/Comercio.php';
+        $comercio = new Comercio();
+        $result = $comercio->getAll();
+        return $result;
+    }
+
+    //Mostrar comercios
+    public static function showComercioById($comercio_id){
+        require_once 'models/Comercio.php';
+        $comercio = new Comercio();
+        $comercio->setId($comercio_id);
+        $result = $comercio->getOne();
+        return $result;
+    }
 }

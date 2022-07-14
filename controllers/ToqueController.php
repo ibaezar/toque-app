@@ -12,7 +12,7 @@ class ToqueController{
         if(isset($_POST) && isset($_SESSION['login'])){
             $toque = new Toque();
             $toque->setUsuario_id($_SESSION['login']->id);
-            $toque->setComercio($_POST['comercio']);
+            $toque->setComercio_id($_POST['comercio_id']);
             $toque->setBoleta_factura($_POST['boleta_factura']);
             $toque->setProducto($_POST['producto']);
             $toque->setTipo($_POST['tipo']);

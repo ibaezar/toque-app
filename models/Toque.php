@@ -6,7 +6,7 @@ class Toque{
 
     private $id;
     private $usuario_id;
-    private $comercio;
+    private $comercio_id;
     private $boleta_factura;
     private $producto;
     private $tipo;
@@ -45,14 +45,14 @@ class Toque{
         $this->usuario_id = (int)$usuario_id;
     }
 
-    public function getComercio()
+    public function getComercio_id()
     {
-        return $this->comercio;
+        return $this->comercio_id;
     }
 
-    public function setComercio($comercio)
+    public function setComercio_id($comercio_id)
     {
-        $this->comercio = $this->database->real_escape_string($comercio);
+        $this->comercio_id = (int)$comercio_id;
     }
 
     public function getBoleta_factura()
@@ -191,7 +191,7 @@ class Toque{
         $sql = "INSERT INTO toques VALUES("
         ."null," 
         ."{$this->getUsuario_id()}," 
-        ."'{$this->getComercio()}'," 
+        ."'{$this->getComercio_id()}'," 
         ."{$this->getBoleta_factura()}," 
         ."'{$this->getProducto()}'," 
         ."'{$this->getTipo()}'," 
